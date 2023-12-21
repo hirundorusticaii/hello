@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hello,world!</title>
+  </head>
+  <body>
+    <h1 class="neon">Hello,<br class="br_980">World!</h1>
+    <p class="comment zoom">こんにちは、世界！<br>初めて作った<br class="br_768">HTML/CSS<br class="br_768">ファイルです。</p>
+
+    <div class="scroll">
+      <span class="text">Scroll</span>
+    </div>
+
+    <h2 class="point">HTMLだけだと記述した順番に<br class="br_768">上から並ぶ</h2>
+    <div>
+      <div class="before">
+        <div class="box1">box1 -わかりやすく色つき-</div>
+        <div class="box2">box2 -わかりやすく色つき-</div>
+        <div class="box3">box3 -わかりやすく色つき-</div>
+      </div>
+      <div class="source_code">
+        <p>
+          &lt;div class="before"&gt;<br>　&lt;div class="box box1"&gt;&lt;/div&gt;<br>　&lt;div class="box box2"&gt;&lt;/div&gt;<br>　&lt;div class="box box3"&gt;&lt;/div&gt;<br>&lt;/div&gt;
+        </p>
+      </div>
+    </div>
+
+    <h2 class="point2">CSSを加えることで見た目や<br class="br_768">配置の操作ができる</h2>
+    <div class="after">
+      <div class="box box4"></div>
+      <div class="box box5"></div>
+      <div class="box box6"></div>
+    </div>
+    <div class="source_code">
+      <span class="under_bar"></span>
+      <p>
+        &lt;div class="after"&gt;<br>　&lt;div class="box box4"&gt;&lt;/div&gt;<br>　&lt;div class="box box5"&gt;&lt;/div&gt;<br>　&lt;div class="box box6"&gt;&lt;/div&gt;<br>&lt;/div&gt;
+      </p>
+      <p>
+        .after {<br>　display: flex;<br>　justify-content: center;<br>}
+      </p>
+    </div>
+
+    <h2 class="point2">webページを見る端末によって<br class="br_768">見え方が変わる</h2>
+    <div class="flex_box">
+      <div class="box-f box7"></div>
+      <div class="box-f box8"></div>
+      <div class="box-f box9"></div>
+    </div>
+    <div class="source_code">
+      <p>
+        &lt;div class="flex_box"&gt;<br>　&lt;div class="box box7"&gt;&lt;/div&gt;<br>　&lt;div class="box box8"&gt;&lt;/div&gt;<br>　&lt;div class="box box9"&gt;&lt;/div&gt;<br>&lt;/div&gt;
+      </p>
+      <p>
+        .flex_box {<br>　display: flex;<br>　justify-content: center;<br>　flex-wrap: wrap;<br>}
+      </p>
+    </div>
+
+
+    <div class="scroll">
+      <span class="text">Next</span>
+    </div>
+
+  </body>
+</html>
