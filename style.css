@@ -148,7 +148,6 @@ h1{
 }
 
 .source_code {
-  position: relative;
   margin-left: 32px;
   font-size: calc(6px + 4vh);
   line-height: calc(6px + 6vh);
@@ -183,13 +182,18 @@ h1{
   margin:10px;
 }
 
+.base_under_bar{
+  position: relative;
+}
+
 .under_bar {
   position:absolute;
-  top: 390px;
-  left: 38px;
+  top: 2.6vh;
+  left: 0px;
   display: block;
+  padding-top:16px;
   width: 10px;
-  height: 30px;
+  height: 24px;
   background-color: yellow;
   opacity: .5;
   animation: under 3.2s linear infinite;
@@ -201,7 +205,7 @@ h1{
     width: 10px;
   }
   50%{
-    width: 240px;
+    width: 260px;
   }
 }
 
@@ -295,8 +299,8 @@ h2{
     }
 
     .under_bar {
-      top: 210px;
-      left: 22px;
+      /* top: 0%; */
+      /* left: 0px; */
       display: block;
       width: 10px;
       height: 16px;
@@ -345,8 +349,8 @@ h2{
     }
 
     .under_bar {
-      top: 210px;
-      left: 16px;
+      /* top: 0px; */
+      /* left: 0px; */
       display: block;
       width: 10px;
       height: 16px;
