@@ -6,12 +6,14 @@
   padding: 0;
 }
 
-body{
+/* index.html_start */
+
+#top body{
   background: #1f1e1e;
   padding-bottom:20px;
 }
 
-h1{
+#top h1{
   margin: 240px 0 100px 0;
   font-size: calc(20px + 18vh);
   line-height: calc(20px + 20vh);
@@ -82,6 +84,11 @@ h1{
   text-align:center;
   color: #fff;
   opacity: .8;
+}
+
+.scroll a{
+  color:inherit;
+  text-decoration:none;
 }
 
 .scroll::before {
@@ -280,15 +287,67 @@ h2{
   flex-grow: 1;
 }
 
+/* index.html_end */
+
+/* code-test.html_start */
+
+/* ＊＊＊ここに見本のCSSを記述＊＊＊ */
+
+#code-test header{
+  border: 4px solid red;
+  background-color: coral;
+}
+
+#code-test main{
+  border: 4px solid blue;
+  background-color: aliceblue;
+}
+
+#code-test footer{
+  border: 4px solid lime;
+  background-color: lemonchiffon;
+}
+
+.box-model-out{
+  display: flex;
+  justify-content: center;
+  background-color: aquamarine;
+  width: 90%;
+  height: 300px;
+  margin:20px auto;
+}
+
+.box-model-in{
+  align-self: center;
+  background-color: antiquewhite;
+  width: 400px;
+  height: 100px;
+  border: 8px solid #1b1b1b;
+  font-size:2rem;
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* code-test.html_end */
+
 @media screen and (max-width: 980px) {
+
+  /* index.html_start */
+
   .br_980{
     display: block;
   }
+
+  /* index.html_end */
+
 }
 
 @media screen and (max-width: 768px) {
 /* 768pxまでの幅の場合に適応される */
-      body {
+  /* index.html_start */
+      #top body {
         /* background-color:#f10010; */
     }
 
@@ -321,14 +380,19 @@ h2{
     .br_768{
       display: block;
     }
+
+  /* index.html_end */
+
 }
+
 @media screen and (max-width: 480px) {
 /* 480pxまでの幅の場合に適応される */
-    body {
+  /* index.html_start */
+    #top body {
         /* background-color:#F9DF2C; */
     }
 
-    h1{
+    #top h1{
       margin: 120px 0 50px 0;
       font-size: calc(16px + 9vh);
       line-height: calc(12px + 12vh);
@@ -346,12 +410,10 @@ h2{
     }
 
     .under_bar {
-      top: 10px;
-      width: 4px;
-      height: 1px;
+      display: none;
     }
 
-    @keyframes under {
+    /* @keyframes under {
 
       0% , 100%{
         width: 1px;
@@ -359,10 +421,12 @@ h2{
       50%{
         width: 100px;
       }
-    }
+    } */
 
-    h2{
+    #top h2{
       margin: 100px 0;
       font-size: 24px;
     }
+  /* index.html_end */
+
 }
